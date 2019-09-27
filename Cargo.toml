@@ -5,6 +5,8 @@ authors = ["Lily Hopkins <bsalarius@gmail.com>"]
 edition = "2018"
 description = "FFI bindings to TS2020's RailDriver.dll"
 license = "MIT"
+homepage = "https://github.com/Bsalarius/libraildriver-sys"
+repository = "https://github.com/Bsalarius/libraildriver-sys"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
