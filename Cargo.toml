@@ -1,6 +1,6 @@
 [package]
 name = "libraildriver-sys"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Lily Hopkins <bsalarius@gmail.com>"]
 edition = "2018"
 description = "FFI bindings to TS2020's RailDriver.dll"
@@ -12,4 +12,4 @@ repository = "https://github.com/Bsalarius/libraildriver-sys"
 
 [dependencies]
 libc = "0.2"
-libloading = "0.5"
+libloading = "0.7.3"

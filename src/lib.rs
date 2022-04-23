@@ -36,6 +36,16 @@ pub unsafe fn GetRailDriverValue(id: c_int) -> c_float {
     rd.get::<unsafe extern fn(c_int) -> c_float>(b"GetRailDriverValue").unwrap()(id)
 }
 
+pub unsafe fn GetControllerValue(controllerId: c_int, getType: c_int) -> c_float {
+    let rd = get_library();
+    rd.get::<unsafe extern fn(c_int, c_int) -> c_float>(b"GetControllerValue").unwrap()(controllerId, getType)
+}
+
+pub unsafe fn SetControllerValue(controllerId: c_int, value: c_float) {
+    let rd = get_library();
+    rd.get::<unsafe extern fn(c_int, c_float)>(b"SetControllerValue").unwrap()(controllerId, value)
+}
+
 pub unsafe fn GetRailSimConnected() -> bool {
     let rd = get_library();
     rd.get::<unsafe extern fn() -> bool>(b"GetRailSimConnected").unwrap()()
